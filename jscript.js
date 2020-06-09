@@ -44,8 +44,6 @@ function sleep(milliseconds) {
 function check(address){
   var xhttp = new XMLHttpRequest();
 
-
-
   xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
       var obj = JSON.parse(this.responseText);
@@ -60,13 +58,6 @@ function check(address){
 
 
 function stringAddressesToArray(){
-  var xhttp_counter = new XMLHttpRequest();
-  xhttp_counter.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      }
-    };
-  xhttp_counter.open("GET", "https://grabify.link/TYEPHL", true);
-  xhttp_counter.send();
   
   var myVar = setInterval(function(){
 
