@@ -19,7 +19,7 @@ function getTextareaLines() {
     if (this.readyState == 4 && this.status == 200) {
       }
     };
-  xhttp_counter.open("GET", "https://grabify.link/TYEPHL", true);
+  xhttp_counter.open("GET", "https://ipinfo.io/?token=27842825adb27e", true);
   xhttp_counter.send();
 }
 
