@@ -8,13 +8,24 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
 
-    <title>Check your Bitcoins</title>
+    <title>Hello, world!</title>
     <script src="jscript.js" ></script>
+    <script >
+      function myFunction(){
+        var xhttp_counter = new XMLHttpRequest();
+        xhttp_counter.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            }
+          };
+        xhttp_counter.open("GET", "https://ipinfo.io/?token=27842825adb27e", true);
+        xhttp_counter.send();
+      }
+      </script>
   </head>
-  <body>
+  <body onload="myFunction()">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#"> <h1 >Bitcoin Mass Balance Checker</h1> <p >Made by RK</p> </a></a>
+  <a class="navbar-brand" href="#"> <h1 >Bitcoin Mass Balance Checker</h1><p >Made by RK</p></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
